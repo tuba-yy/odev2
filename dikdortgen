@@ -1,0 +1,42 @@
+using System;
+
+namespace charp_odev
+{
+    class Diktortgen
+    {
+        public int uk;
+        public int kk;
+        public int AlanHesapla()
+        {
+            int alan = uk * kk;
+            return alan;
+        }
+        public int CevreHesapla()
+        {
+            int cevre = 2 * (uk + kk);
+            return cevre;
+        }
+    }
+    class program
+    {
+     static void Main(string[] args)
+        {
+            Diktortgen dd1 = new Diktortgen();
+            dd1.uk = 5;
+            dd1.kk = 10;
+            Diktortgen dd2 = new Diktortgen();
+            dd2.uk = 7;
+            dd2.kk = 13;
+
+            Console.WriteLine(1);
+            Console.WriteLine("Alan:{0}", dd1.AlanHesapla());
+            Console.WriteLine("Cevre:{0}", dd1.CevreHesapla());
+            Console.WriteLine(2);
+            Console.WriteLine("Alan:{0}", dd2.AlanHesapla());
+            Console.WriteLine("Alan:{0}", dd2.CevreHesapla());
+
+        }
+    }
+
+
+}
