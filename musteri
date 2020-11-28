@@ -1,0 +1,55 @@
+using System;
+
+namespace charp_odev
+{
+    class Musteri
+    {
+        public string Ad;
+        public string SoyAd;
+        public int ogrno;
+        public int yas;
+        public string Meslek;
+        public int maas;
+
+        public void OzellikleriYaz()
+        {
+            Console.WriteLine("---------------");
+            Console.WriteLine("Adı Soyad: " + Ad + SoyAd);
+            Console.WriteLine("Yaşı: " + yas);
+            Console.WriteLine("Mesleği: " + Meslek);
+            Console.WriteLine("Maas: " + maas);
+            Console.WriteLine("---------------");
+        }
+        public void OzellikleriYaz2()
+        {
+            Console.WriteLine("---------------");
+            Console.WriteLine("Adı Soyad: " + Ad + SoyAd);
+            Console.WriteLine("Ogrenci No: " + ogrno);
+            Console.WriteLine("Yaşı: " + yas);
+            Console.WriteLine("---------------");
+        }
+
+    }
+    class AnaProgram
+    {
+        static void Main()
+        {
+            Musteri musteri1 = new Musteri();
+            musteri1.Ad = "Tuba";
+            musteri1.SoyAd = "Yesilyurt";
+            musteri1.ogrno = 222003018;
+            musteri1.yas = 33;
+
+            Musteri musteri2 = new Musteri();
+            musteri2.Ad = "Murat";
+            musteri2.SoyAd = "Erdogan";
+            musteri2.Meslek = "Arastirma Gorevlisi";
+            musteri2.yas = 33;
+            musteri2.maas = 10000;
+
+            musteri1.OzellikleriYaz2();
+            musteri2.OzellikleriYaz();
+
+        }
+    }
+}
